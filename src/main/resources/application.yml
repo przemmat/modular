@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: monolit
+  datasource:
+    url: jdbc:postgresql://localhost:5432/logistics_db
+    username: postgres
+    password: postgres_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8080
