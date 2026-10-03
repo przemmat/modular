@@ -80,7 +80,7 @@ pipeline {
                     END=$(date +%s%3N)
                     DIFF=$((END - START))
                     PEAK_MB=$(awk "BEGIN {printf \\"%.2f\\", ${PEAK_KB}/1024}")
-                    echo "${BUILD_NUMBER},smart_tests,${DIFF},${PEAK_MB},0" >> ${METRICS_FILE}
+                    echo "${BUILD_NUMBER},tests,${DIFF},${PEAK_MB},0" >> ${METRICS_FILE}
                 '''
 			}
 		}
